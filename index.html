@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 style="color: deeppink">Do you love me?</h1>
+<button style="font-variation-settings: normal" onclick="alert('I LOVE YOU TOO <3')">Yes</button>&emsp;&emsp;
+<button id="no" onmouseover="no()" style="position:absolute">No</button>
+
+<script>
+    function no() {
+        let x = Math.round(Math.random() * window.innerWidth);
+        let y = Math.round(Math.random() * window.innerHeight);
+        document.getElementById("no").style.left = x + "px";
+        document.getElementById("no").style.top = y + "px";
+    }
+</script>
+
+</body>
+</html>
